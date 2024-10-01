@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Is this villager scamming me?</title>
+		<style>
+			body {
+				font-size: 1.2em;
+				font-family: sans-serif;
+			}
+			img {
+				width: 2em;
+				image-rendering: pixelated;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>Is this villager scamming me????</h1>
+		<div>Which enchant is he selling you?</div>
+		<select id="bookname">
+		</select>
+		<select id="level">
+		</select>
+		<div>For how much is he selling it?</div>
+		<input type="number" min="1" max="64" id="price" value="23"> <img src="images/emerald.png">
+		<div>Minimum price for enchant: <span id="minprice"></span></div>
+		<div>Maximum price for enchant: <span id="maxprice"></span></div>
+		<div>This is: <span id="scam_quotient"></span></div>
+		<br>
+		<br>
+		<em>enchantment description:</em>
+		<div id="description"></div>
+	
+		<script>
+			const price_range = [
+				[5, 19],  // level I
+				[8, 32],  // level II
+				[11, 45], // level III
+				[14, 58], // level IV
+				[17, 64], // level V
+			];
+			const roman_numerals = ["I", "II", "III", "IV", "V"];
+			var books;
+			fetch("books.json")
+				.then(res => res.json())
+				.then(onload);
+
+			let bookname_selector = document.querySelector("#bookname");
+			let level_selector = document.querySelector("#level");
+			let price_selector = document.querySelector("#price")
+
+			let minprice_output = document.querySelector("#minprice")
+			let maxprice_output = document.querySelector("#maxprice")
+			let scam_output = document.querySelector("#scam_quotient")
+
+			let description_output = document.querySelector("#description")
+			
+			function onload(r) {
+				books = r;
+				console.log(books);
+				for (let name of Object.keys(books)) {
+					console.log(name);
+					let opt = document.createElement("option");
+					opt.textContent = name;
+					opt.value = name;
+					bookname_selector.appendChild(opt);
+				}
+				refresh_max_levels()
+			}
+
+			bookname_selector.onchange = refresh_max_levels;
+			level_selector.onchange = on_price_change;
+			price_selector.oninput = on_price_change;
+
+			function refresh_max_levels() {
+				level_selector.innerHTML = "";
+				let book = books[bookname_selector.value];
+				for (let i = 0; i < book.max_level; i++) {
+					let opt = document.createElement("option");
+					let roman_level = roman_numerals[i];
+					opt.textContent = roman_level;
+					opt.value = i;
+					level_selector.appendChild(opt);
+				}
+				description_output.innerHTML = book.desc
+				on_price_change()
+			}
+
+			function on_price_change() {
+				let treasure_multiplier = books[bookname_selector.value].treasure ? 2 : 1
+				let minprice = price_range[level_selector.value][0] * treasure_multiplier
+				let maxprice = price_range[level_selector.value][1] * treasure_multiplier
+				let price = price_selector.value
+				let quotient = (price - minprice) / (maxprice - minprice)
+
+				minprice_output.textContent = minprice
+				maxprice_output.textContent = maxprice
+				let percentage = Math.round(quotient * 100)
+				if (percentage == 0) {
+					scam_output.textContent = "a goated price"
+				} else {
+					scam_output.textContent = percentage + "% too expensive"
+				}
+			}
+		</script>
+	</body>
+</html>

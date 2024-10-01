@@ -1,0 +1,471 @@
+{
+	"Aqua Affinity": {
+		"treasure": false,
+		"desc": "Increases underwater mining speed.",
+		"max_level": 1,
+		"primary_items": [
+			"helmet"
+		],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Bane of Arthropods": {
+		"treasure": false,
+		"desc": "Increases damage and applies Slowness IV to arthropod mobs (spiders, cave spiders, silverfish, endermites and bees).",
+		"max_level": 5,
+		"primary_items": [
+			"sword"
+		],
+		"secondary_items": [
+			"axe",
+			"mace"
+		],
+		"incompatible_with": ["Smite", "Sharpness", "Breach", "Density"],
+		"weight": 5
+	},
+	
+	"Blast Protection": {
+		"treasure": false,
+		"desc": "Reduces explosion damage and knockback.",
+		"max_level": 4,
+		"primary_items": [
+			"helmet",
+			"chestplate",
+			"leggings",
+			"boots"
+		],
+		"secondary_items": [],
+		"incompatible_with": ["Fire Protection", "Protection", "Projectile Protection"],
+		"weight": 2
+	},
+	
+	"Breach": {
+		"treasure": false,
+		"desc": "Reduces the effectiveness of the armor on the target. The armor's effectiveness is reduced by 15% per level.",
+		"max_level": 4,
+		"primary_items": [
+			"mace"
+		],
+		"secondary_items": [],
+		"incompatible_with": ["Density", "Bane of Arthropods", "Smite", "Sharpness"],
+		"weight": 2
+	},
+	
+	"Channeling": {
+		"treasure": false,
+		"desc": "During thunderstorms, a thrown trident summons a lightning bolt on the target when hitting it.",
+		"max_level": 1,
+		"primary_items": [
+			"trident"
+		],
+		"secondary_items": [],
+		"incompatible_with": ["Riptide"],
+		"weight": 1
+	},
+	
+	"Curse of Binding": {
+		"treasure": true,
+		"desc": "Items cannot be removed from armor slots.",
+		"max_level": 1,
+		"primary_items": [],
+		"secondary_items": [
+			"helmet",
+			"chestplate",
+			"leggings",
+			"boots",
+			"elytra"
+		],
+		"incompatible_with": [],
+		"weight": 1
+	},
+	
+	"Curse of Vanishing": {
+		"treasure": true,
+		"desc": "Items disappear on death.",
+		"max_level": 1,
+		"primary_items": [],
+		"secondary_items": [
+			"helmet", "chestplate", "leggings", "boots", "elytra",
+			"pickaxe", "shovel", "axe", "sword", "hoe",
+			"fishing_rod", "bow", "shears", "flint_and_steel",
+			"compass", "carrot_on_stick", "fungus_on_stick", "shield",
+			"trident", "crossbow", "brush", "mace"
+		],
+		"incompatible_with": [],
+		"weight": 1
+	},
+	
+	"Density": {
+		"treasure": false,
+		"desc": "Increases the damage dealt per block fallen, increasing by 0.5 per level.",
+		"max_level": 5,
+		"primary_items": ["mace"],
+		"secondary_items": [],
+		"incompatible_with": [
+			"Breach", "Bane of Arthropods", "Smite", "Sharpness"
+		],
+		"weight": 5
+	},
+	
+	"Depth Strider": {
+		"treasure": false,
+		"desc": "Increases underwater movement speed.",
+		"max_level": 3,
+		"primary_items": ["boots"],
+		"secondary_items": [],
+		"incompatible_with": [
+			"Frost Walker"
+		],
+		"weight": 2
+	},
+	
+	"Efficiency": {
+		"treasure": false,
+		"desc": "Increases mining speed.",
+		"max_level": 5,
+		"primary_items": [
+			"pickaxe", "shovel", "axe", "hoe"
+		],
+		"secondary_items": ["shears"],
+		"incompatible_with": [],
+		"weight": 10
+	},
+	
+	"Feather Falling": {
+		"treasure": false,
+		"desc": "Reduces fall damage.",
+		"max_level": 4,
+		"primary_items": ["boots"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 5
+	},
+	
+	"Fire Aspect": {
+		"treasure": false,
+		"desc": "Sets target on fire.",
+		"max_level": 2,
+		"primary_items": ["sword", "axe", "mace"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Fire Protection": {
+		"treasure": false,
+		"desc": "Reduces fire damage and burn time.",
+		"max_level": 4,
+		"primary_items": ["helmet", "chestplate", "leggings", "boots"],
+		"secondary_items": [],
+		"incompatible_with": [
+			"Blast Protection", "Protection", "Projectile Protection"
+		],
+		"weight": 5
+	},
+	
+	"Flame": {
+		"treasure": false,
+		"desc": "Arrows shot are ignited and deal fire damage to the target",
+		"max_level": 1,
+		"primary_items": ["bow"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Fortune": {
+		"treasure": false,
+		"desc": "Increases the amount of block drops.",
+		"max_level": 3,
+		"primary_items": ["pickaxe", "shovel", "axe", "hoe"],
+		"secondary_items": [],
+		"incompatible_with": ["Silk Touch"],
+		"weight": 2
+	},
+	
+	"Frost Walker": {
+		"treasure": true,
+		"desc": "Freezes the water under the player's feet, allowing them to walk over water.",
+		"max_level": 2,
+		"primary_items": [],
+		"secondary_items": ["boots"],
+		"incompatible_with": ["Depth Strider"],
+		"weight": 2
+	},
+	
+	"Impaling": {
+		"treasure": false,
+		"desc": "Increases damage against aquatic mobs.",
+		"max_level": 5,
+		"primary_items": ["trident"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Infinity": {
+		"treasure": false,
+		"desc": "Prevents consumption of arrows.",
+		"max_level": 1,
+		"primary_items": ["bow"],
+		"secondary_items": [],
+		"incompatible_with": ["Mending"],
+		"weight": 1
+	},
+	
+	"Knockback": {
+		"treasure": false,
+		"desc": "Increases melee knockback.",
+		"max_level": 2,
+		"primary_items": ["sword"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 5
+	},
+	
+	"Looting": {
+		"treasure": false,
+		"desc": "Increases mob loot.",
+		"max_level": 3,
+		"primary_items": ["sword"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Loyalty": {
+		"treasure": false,
+		"desc": "Trident returns after being thrown.",
+		"max_level": 3,
+		"primary_items": ["trident"],
+		"secondary_items": [],
+		"incompatible_with": ["Riptide"],
+		"weight": 5
+	},
+	
+	"Luck of the Sea": {
+		"treasure": false,
+		"desc": "Increases rate of treasure bites (enchanting books, etc.).",
+		"max_level": 3,
+		"primary_items": ["fishing_rod"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Lure": {
+		"treasure": false,
+		"desc": "Decreases time for bites.",
+		"max_level": 3,
+		"primary_items": ["fishing_rod"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Mending": {
+		"treasure": true,
+		"desc": "Repairs the item using experience.",
+		"max_level": 1,
+		"primary_items": [],
+		"secondary_items": [
+			"helmet", "chestplate", "leggings", "boots",
+			"pickaxe", "shovel", "axe", "sword", "hoe",
+			"fishing_rod", "bow", "shears", "flint_and_steel",
+			"carrot_on_stick", "fungus_on_stick", "shield", "elytra",
+			"trident", "crossbow", "brush", "mace"
+		],
+		"incompatible_with": ["Infinity"],
+		"weight": 2
+	},
+	
+	"Multishot": {
+		"treasure": false,
+		"desc": "Fires 3 arrows at the same time.",
+		"max_level": 1,
+		"primary_items": ["crossbow"],
+		"secondary_items": [],
+		"incompatible_with": ["Piercing"],
+		"weight": 2
+	},
+	
+	"Piercing": {
+		"treasure": false,
+		"desc": "Arrows pierce entities, allowing for arrows to pierce through stacks of mobs.",
+		"max_level": 4,
+		"primary_items": ["crossbow"],
+		"secondary_items": [],
+		"incompatible_with": ["Multishot"],
+		"weight": 10
+	},
+	
+	"Power": {
+		"treasure": false,
+		"desc": "Increases arrow damage.",
+		"max_level": 5,
+		"primary_items": ["bow"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 10
+	},
+	
+	"Projectile Protection": {
+		"treasure": false,
+		"desc": "Reduces damage from projectiles.",
+		"max_level": 4,
+		"primary_items": ["helmet", "chestplate", "leggings", "boots"],
+		"secondary_items": [],
+		"incompatible_with": ["Protection", "Blast Protection", "Fire Protection"],
+		"weight": 5
+	},
+	
+	"Protection": {
+		"treasure": false,
+		"desc": "Reduces most forms of damage.",
+		"max_level": 4,
+		"primary_items": ["helmet", "chestplate", "leggings", "boots"],
+		"secondary_items": [],
+		"incompatible_with": ["Projectile Protection", "Blast Protection", "Fire Protection"],
+		"weight": 10
+	},
+	
+	"Punch": {
+		"treasure": false,
+		"desc": "Increases arrow knockback.",
+		"max_level": 2,
+		"primary_items": ["bow"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Quick Charge": {
+		"treasure": false,
+		"desc": "Decreases crossbow charging time.",
+		"max_level": 3,
+		"primary_items": ["crossbow"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 5
+	},
+	
+	"Respiration": {
+		"treasure": false,
+		"desc": "Extends underwater breathing time.",
+		"max_level": 3,
+		"primary_items": ["helmet"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Riptide": {
+		"treasure": false,
+		"desc": "Trident launches player with itself when thrown while in water or rain.",
+		"max_level": 3,
+		"primary_items": ["trident"],
+		"secondary_items": [],
+		"incompatible_with": ["Channeling", "Loyalty"],
+		"weight": 2
+	},
+	
+	"Sharpness": {
+		"treasure": false,
+		"desc": "Increases melee damage.",
+		"max_level": 5,
+		"primary_items": ["sword"],
+		"secondary_items": ["axe"],
+		"incompatible_with": ["Bane of Arthropods", "Smite", "Breach", "Density"],
+		"weight": 10
+	},
+	
+	"Silk Touch": {
+		"treasure": false,
+		"desc": "Mined blocks drop themselves.",
+		"max_level": 1,
+		"primary_items": ["pickaxe", "shovel", "axe", "hoe"],
+		"secondary_items": [],
+		"incompatible_with": ["Fortune"],
+		"weight": 1
+	},
+	
+	"Smite": {
+		"treasure": false,
+		"desc": "Increases damage to the undead.",
+		"max_level": 5,
+		"primary_items": ["sword"],
+		"secondary_items": ["axe", "mace"],
+		"incompatible_with": ["Bane of Arthropods", "Sharpness", "Breach", "Density"],
+		"weight": 5
+	},
+	
+	"Soul Speed": {
+		"treasure": true,
+		"desc": "Increases movement speed on soul sand and soul soil.",
+		"max_level": 3,
+		"primary_items": [],
+		"secondary_items": ["boots"],
+		"incompatible_with": [],
+		"weight": 1
+	},
+	
+	"Sweeping Edge": {
+		"treasure": false,
+		"desc": "Increases sweeping attack damage.",
+		"max_level": 3,
+		"primary_items": ["sword"],
+		"secondary_items": [],
+		"incompatible_with": [],
+		"weight": 2
+	},
+	
+	"Swift Sneak": {
+		"treasure": true,
+		"desc": "Increases sneaking speed.",
+		"max_level": 3,
+		"primary_items": [],
+		"secondary_items": ["leggings"],
+		"incompatible_with": [],
+		"weight": 1
+	},
+	
+	"Thorns": {
+		"treasure": false,
+		"desc": "Taking damage causes the attacker to also take damage.",
+		"max_level": 3,
+		"primary_items": ["chestplate"],
+		"secondary_items": ["helmet", "leggings", "boots"],
+		"incompatible_with": [],
+		"weight": 1
+	},
+	
+	"Unbreaking": {
+		"treasure": false,
+		"desc": "Reduces durability damage.",
+		"max_level": 3,
+		"primary_items": [
+			"helmet", "chestplate", "leggings", "boots",
+			"pickaxe", "shovel", "axe", "sword", "hoe",
+			"fishing_rod", "bow", "trident", "crossbow", "mace"
+		],
+		"secondary_items": [
+			"shears", "flint_and_steel", "shield",
+			"carrot_on_stick", "fungus_on_stick", "elytra",
+			"brush"
+		],
+		"incompatible_with": [],
+		"weight": 5
+	},
+	
+	"Wind Burst": {
+		"treasure": true,
+		"desc": "Emits a burst of wind (like that of a wind charge) upon executing a mace smash attack on an entity, launching the attacker upward. It can be used to chain smash attacks together, and the strength of the launch increases per level.",
+		"max_level": 3,
+		"primary_items": [],
+		"secondary_items": ["mace"],
+		"incompatible_with": [],
+		"weight": 2
+	}
+}
